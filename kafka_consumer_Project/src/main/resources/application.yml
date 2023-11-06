@@ -1,0 +1,13 @@
+server:
+    port: 8081
+spring:
+    cloud:
+        stream:
+            bindings:
+                input:
+                    destination: 'mayank'
+
+            kafka:
+                binder:
+                    brokers: localhost
+                    defaultBrokerPort: 9092
